@@ -3,8 +3,13 @@ package fruits;
 import fruits.Fruit;
 
 public class Pear extends Fruit {
-    @Override
-    public int getCountFruits() {
-        return 10;
+    private static int count = 0;
+
+    public Pear() {
+        count++;
+    }
+
+    public static int getCount() {
+        return count;
     }
 }
